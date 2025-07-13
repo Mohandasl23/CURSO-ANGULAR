@@ -1,0 +1,20 @@
+<h1>Descrevendo Usuário:</h1>
+<p>Nome: {{ name }}</p>
+<p>Email: {{userData.email}}</p>
+<p>Função: {{userData.role}}</p>
+<p>Endereço: {{userAddress.street}}, {{userAddress.number}}, {{userAddress.color}}, {{userAddress.house}}, {{userAddress.garden}}  </p>
+<P>Carro: {{userCar.brand}}, {{userCar.model}}, {{userCar.year}}</P>
+<p>Empresa: {{ userCompany.name}}, {{userCompany.cnpj}}, {{userCompany.address}}</p>
+<p><strong>Mercados:</strong></p>
+<ul>
+  <li *ngFor="let item of userMarket.list">
+    Produto: {{ item.name }} <br>
+    Preço: R$ {{ item.price | number:'1.2-2' }} <br>
+    Quantidade: {{ item.quantity }} <br>
+    Total: R$ {{ (item.price * item.quantity) | number:'1.2-2' }}
+  </li>
+</ul>
+
+
+
+
