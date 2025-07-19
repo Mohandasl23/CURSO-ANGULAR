@@ -3,14 +3,14 @@ import { BrowserModule, provideClientHydration, withEventReplay } from '@angular
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponentComponent } from './compomponents/first-component/first-component.component';
+import { FirstComponent } from './components/first-component/first-component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponentComponent,
+    FirstComponent,
     ParentDataComponent,
     DirectivesComponent
   ],

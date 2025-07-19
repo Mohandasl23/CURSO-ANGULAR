@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-first-component',
   standalone: false,
-  templateUrl: './first-component.component.html',
-  styleUrl: './first-component.component.css'
+  templateUrl: './first-component.html',
+  styleUrl: './first-component.css'
 })
-export class FirstComponentComponent implements OnInit {
+export class FirstComponent implements OnInit {
   constructor() { }
   name: string = 'Mohandas';
   age: number = 40;
